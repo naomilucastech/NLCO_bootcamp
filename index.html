@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicons/favicon-16x16.png"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Naomi Lucas - Bootcamp Cohort2</title>
+  </head>
+  <body>
+    <section id="navbar" class="py-3">
+      <div class="container">
+        <div class="row justify-content-between mt-3">
+          <div class="col-sm-4 col-5 text-start">
+            <button
+              data-bs-toggle="modal"
+              data-bs-target="#backdropRegModal"
+              id="applyNowCTA"
+              class="btn btn-light btn-block"
+            >
+              Apply Now
+            </button>
+          </div>
+          <div class="col-md-4 col-4 h1 text-center logoImage">
+            <img
+              src="./assets/image/graduate-pro-logo-white-cropped-new.png"
+              alt="GraduatePro Logo"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-4 col-3 text-end">
+            <button id="overlayToggler" href="#">
+              <i class="bx bx-menu"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="banner">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center" id="bannerDiv">
+            <h1>THE EMPLOYMENT BOOTCAMP</h1>
+            <h2 class="employmentHeader"></h2>
+            <p class="employmentBody text-dark"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimoney">
+      <div class="container">
+        <div class="row mt-3 justify-content-center">
+          <h2 class="text-center">DON'T TAKE OUR WORD FOR IT</h2>
+        </div>
+        <div
+          class="owl-carousel owl-theme testimonial-owl"
+          id="quotesContainer"
+        >
+          <!-- // -->
+        </div>
+      </div>
+    </section>
+
+    <section id="whyYouShouldApply">
+      <div class="container">
+        <div class="row mt-3 justify-content-center">
+          <h2 class="text-center">WHY YOU SHOULD APPLY</h2>
+          <div class="col-md-8 text-start bodyText">
+            <p>
+              "Hi. I’m Naomi Lucas and I led the design process for The
+              Employment Bootcamp.
+            </p>
+            <p>
+              I’m not sure how you got here but I’m very glad you did. You’re
+              reading this right now because you want more - More out of life.
+              More for yourself. This is where we come in.
+            </p>
+            <p>
+              The Employment Bootcamp is designed as an adventure; a learning
+              game delivered through short, interactive content and challenges
+              that you must complete to progress to the end.
+            </p>
+            <p>
+              You embark on a transformational journey through various levels,
+              receiving guides and completing quests to earn points and badges
+              that showcase your skills and achievements. The version of you
+              that shows up on the other side will be your very best self -
+              gainfully employed, with very high job prospects and a nimble
+              toolkit to help navigate your career. And the future I just
+              described..."
+            </p>
+            <!-- <br /> -->
+          </div>
+          <div class="col-md-8 text-center bodyText">
+            <button
+              style="font-family: Raleway; color: black; text-align: center"
+              id="applyNowCTA"
+              class="btn btn-dark mt-sm-3 btn-block"
+              data-bs-toggle="modal"
+              data-bs-target="#backdropRegModal"
+            >
+              Apply Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="whatAwaitsYou" style="margin-top: 30px">
+      <div class="container">
+        <div class="row">
+          <div class="container">
+            <div class="page-header text-center mb-5">
+              <h2 id="timeline">HERE'S WHAT AWAITS YOU</h2>
+            </div>
+            <ul class="timeline">
+              <li>
+                <div class="timeline-badge warning">
+                  <i class="bx bx-check"></i>
+                </div>
+                <div class="timeline-panel panelRounded">
+                  <div class="timeline-heading">
+                    <h4 class="timeline-title">Onboarding</h4>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-badge warning">
+                  <i class="bx bx-check"></i>
+                </div>
+                <div class="timeline-panel panelRounded">
+                  <div class="timeline-heading">
+                    <h4 class="timeline-title">
+                      Level One: Understand Who You Are
+                    </h4>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-badge warning">
+                  <i class="bx bx-check"></i>
+                </div>
+                <div class="timeline-panel panelRounded">
+                  <div class="timeline-heading">
+                    <h4 class="timeline-title">
+                      Level Two: Build Your Persona
+                    </h4>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-badge warning">
+                  <i class="bx bx-check"></i>
+                </div>
+                <div class="timeline-panel panelRounded">
+                  <div class="timeline-heading">
+                    <h4 class="timeline-title">
+                      Level Three: Design Your Career
+                    </h4>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-badge warning">
+                  <i class="bx bx-check"></i>
+                </div>
+                <div class="timeline-panel panelRounded">
+                  <div class="timeline-heading">
+                    <h4 class="timeline-title">Level Four: Craft Your Story</h4>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-badge warning">
+                  <i class="bx bx-check"></i>
+                </div>
+                <div class="timeline-panel panelRounded">
+                  <div class="timeline-heading">
+                    <h4 class="timeline-title">
+                      Level Five: Scout The Terrain
+                    </h4>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="timeline-badge warning">
+                  <i class="bx bx-check"></i>
+                </div>
+                <div class="timeline-panel panelRounded">
+                  <div class="timeline-heading">
+                    <h4 class="timeline-title">
+                      Level Six: Rise To The Challenge
+                    </h4>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-badge warning">
+                  <i class="bx bx-check"></i>
+                </div>
+                <div class="timeline-panel panelRounded">
+                  <div class="timeline-heading">
+                    <h4 class="timeline-title">
+                      Level Seven: Claim Your Victory
+                    </h4>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-badge warning">
+                  <i class="bx bx-check"></i>
+                </div>
+                <div class="timeline-panel panelRounded">
+                  <div class="timeline-heading">
+                    <h4 class="timeline-title">Level Eight: Thrive</h4>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-badge warning">
+                  <i class="bx bx-check"></i>
+                </div>
+                <div class="timeline-panel panelRounded">
+                  <div class="timeline-heading">
+                    <h4 class="timeline-title">Handshake</h4>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-badge warning">
+                  <i class="bx bx-check"></i>
+                </div>
+                <div class="timeline-panel panelRounded">
+                  <div class="timeline-heading">
+                    <h4 class="timeline-title">Offboarding</h4>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-badge warning">
+                  <i class="bx bx-check"></i>
+                </div>
+                <div class="timeline-panel panelRounded">
+                  <div class="timeline-heading">
+                    <h4 class="timeline-title">Job Club Activation</h4>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="text-center">
+              <button
+                data-bs-toggle="modal"
+                data-bs-target="#backdropRegModal"
+                id="applyNowCTA"
+                class="btn btn-light btn-block"
+              >
+                Take Me There
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="rootingForYouAre">
+      <div class="container">
+        <div class="row mt-3 justify-content-center">
+          <h2 class="text-center">AND ROOTING FOR YOU ARE...</h2>
+          <h4 class="text-start" style="max-width: 100%">Faculty</h4>
+          <div class="row" style="padding: 0px">
+            <div class="col-md-3 text-center d-block d-sm-none">
+              <img
+                src="./assets/faculty/Naomi-Lucas-Portrait.jpg"
+                class="img-fluid facultyImage"
+                alt="Naomi Lucas"
+                loading="lazy"
+              />
+              <p class="naomiLucasTitle mt-3">
+                <a href="https://www.linkedin.com/in/naomilucas/">
+                  <strong>Naomi Lucas<br />Program Director</strong></a
+                >
+              </p>
+            </div>
+            <div class="col-md-9 facultyText" style="text-align: justify">
+              <p>
+                You will find Naomi straddling the intersection between Media,
+                Youth and Technology. She has managed, consulted for or worked
+                with a long list of brands/projects/organisations driving impact
+                across the globe.
+              </p>
+              <p>
+                She founded Graduatepro Early Careers Accelerator and
+                International Youth Development Centre (IYDC), vehicles through
+                which she has worked assiduously to increase access to economic
+                opportunities for young people within and outside the continent.
+                She wrote I'm A Graduate Now What? and served as Creative
+                Director of the audio-visual production featuring 56 Nigerian
+                influencers and celebrities. With over five hundred thousand
+                copies sold and streams on a dozen digital publishing platforms,
+                the content has become the definitive guide for those who want
+                to win in the global talent marketplace.
+              </p>
+              <p>
+                A proud alumna of the University of Cambridge’s Executive
+                Coaching Programme, The Commonwealth Network’s International
+                Youth Programme and University of Oxford’s Fintech Programme,
+                Building on the lessons and successes of her work over the last
+                16+ years, Naomi now spends most of her time designing,
+                developing and deploying solutions focused on bridging the gap
+                between the demand for work-ready talent and the supply of
+                decent, meaningful jobs.
+              </p>
+            </div>
+            <div class="col-md-3 text-center d-none d-sm-block">
+              <img
+                src="./assets/faculty/Naomi-Lucas-Portrait.jpg"
+                class="img-fluid facultyImage"
+                alt="Naomi Lucas"
+                loading="lazy"
+              />
+              <p class="naomiLucasTitle mt-3">
+                <a href="https://www.linkedin.com/in/naomilucas/">
+                  <strong>Naomi Lucas<br />Program Director</strong></a
+                >
+              </p>
+            </div>
+          </div>
+
+          <h4 class="text-start">Facilitators</h4>
+          <div class="row justify-content-center mb-3" style="padding: 0px">
+            <div class="col-md-12">
+              <div
+                id="facilitatorsRow"
+                class="row owl-carousel facilitators-owl owl-theme"
+              ></div>
+            </div>
+          </div>
+
+          <h4 class="text-start">Assessors</h4>
+          <div class="row justify-content-center" style="padding: 0px">
+            <div class="col-md-12 text-center">
+              <div
+                id="assessorsRow"
+                class="owl-carousel assessors-owl owl-theme"
+              ></div>
+              <button
+                data-bs-toggle="modal"
+                data-bs-target="#backdropRegModal"
+                id="applyNowCTA"
+                class="btn btn-light mt-3 btn-block"
+              >
+                I Want In
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="toJoinTheBootcamp" class="mb-5">
+      <div class="container">
+        <div class="row mt-3 justify-content-center">
+          <h2 class="text-center">TO JOIN THE BOOTCAMP...</h2>
+          <div class="col-md-7 text-start">
+            <p class="mt-4 text-center" style="font-size: 23px">
+              <strong>You are expected to:</strong>
+            </p>
+            <p>
+              <span class="condtionItem"
+                ><i class="bx bx-right-arrow-alt"></i> Pay a non-refundable
+                commitment fee of N55,000 OR the equivalent in dollars/your
+                local currency.</span
+              >
+              <br />
+              <span class="condtionItem"
+                ><i class="bx bx-right-arrow-alt"></i> Commit to completing the
+                bootcamp</span
+              >
+              <br />
+              <span class="condtionItem"
+                ><i class="bx bx-right-arrow-alt"></i> Sign our honour code,
+                media release and learning agreement</span
+              ><br />
+              <span class="condtionItem"
+                ><i class="bx bx-right-arrow-alt"></i> Share your journey on
+                social media (Social Journaling)</span
+              ><br />
+              <span class="condtionItem"
+                ><i class="bx bx-right-arrow-alt"></i> Participate in research
+                for the program (Take Survey etc.)</span
+              ><br />
+              <span class="condtionItem"
+                ><i class="bx bx-right-arrow-alt"></i> Share your reflections at
+                the end of the program (Video Format)</span
+              >
+            </p>
+            <p class="text-center">
+              <button
+                data-bs-toggle="modal"
+                data-bs-target="#backdropRegModal"
+                id="applyNowCTA"
+                class="btn btn-light mt-3 btn-block"
+              >
+                Take Me There Already
+              </button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="whatsItGonnaBe">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12 text-center" style="min-width: 50%">
+            <h2 class="text-center">SO, WHAT IS IT GOING TO BE?</h2>
+            <img
+              src="./assets/image/animationgif.gif"
+              class="img-fluid"
+              alt="Whats It Gonna Be"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faqs">
+      <div class="container">
+        <div class="row mt-3 justify-content-center">
+          <h2 class="text-center mb-4">STILL HAVE QUESTIONS?</h2>
+          <div class="col-md-10">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne"
+                  >
+                    Do I have to pay to participate in the Employment Bootcamp?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Yes you have to. To apply, you will be expected to pay
+                    between one and two dollars. If you are selected, you will
+                    be required to pay a non-refundable commitment fee of
+                    N55,000 OR the equivalent in dollars/your local currency to
+                    participate in the bootcamp.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo"
+                  >
+                    How do I know if I am eligble?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingTwo"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    You are eligible if you:
+                    <ul>
+                      <li>
+                        Graduated from any tertiary institution (Technical
+                        College, University, Mono/Polytechnic, Vocational School
+                        etc.)
+                      </li>
+                      <li>
+                        Have between 1 and 8 years work experience (That means
+                        you graduated no earlier than 2015 and have interned
+                        and/or worked with one or more organisations)
+                      </li>
+                      <li>
+                        Are unemployed, under-employed or self-employed and need
+                        decent work
+                      </li>
+                      <li>
+                        Can speak and write in English clearly, as the program
+                        will be conducted in English
+                      </li>
+                      <li>
+                        Have a functional laptop or smartphone (As the bootcamp
+                        is delivered entirely online)
+                      </li>
+                      <li>
+                        Can afford data to guarantee your uninterrupted
+                        participation in the bootcamp
+                      </li>
+                      <li>
+                        Can commit at least 1 hour 30 minutes daily to
+                        participate in the bootcamp
+                      </li>
+                      <li>
+                        Know how to use basic productivity tools (Like Google
+                        workspace, Slack etc.) and having a track record of
+                        leadership are added advantages
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne"
+                  >
+                    How do I apply?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingThree"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Click any of the call-to-action buttons on this landing
+                    page.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo"
+                  >
+                    When is the deadline?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingFour"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Application closes on the 5th of October 2023.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFive">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFive"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree"
+                  >
+                    I'm A Student. Can I apply?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingFive"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    The Employment Bootcamp was designed for early careers
+                    professionals who have completed post-secondary education
+                    and have some work experience. If you are still in school or
+                    university or do not have any work experience, you will not
+                    be eligible to apply at this time. We advise you focus on
+                    graduating, and apply once you are through.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingSix">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseSix"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseFour"
+                  >
+                    Can I reapply for The Employment Bootcamp if I dropped out
+                    after starting the program?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseSix"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingSix"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Yes you may. You will however be required to start afresh
+                    and meet all requirements.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingSeven">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseSeven"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree"
+                  >
+                    What can I expect after I submit my application?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseSeven"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingSeven"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Once you submit your application, you will receive
+                    confirmation email. (If you find our email in your spam box,
+                    please tick "NOT SPAM" and move it to your inbox) Shortly
+                    after, you will receive an email with a task for you to
+                    complete. if you are shortlisted, you will get an email
+                    invite for an info session. If you are selected, you will
+                    get an email confirming your acceptance for the next cohort
+                    of the bootcamp. You can then proceed to pay your commitment
+                    fee and complete all required documentation to secure your
+                    place in the program.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingEight">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseEight"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo"
+                  >
+                    Why was my application rejected?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseEight"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingEight"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    The Employment Bootcamp is an extremely competitive program.
+                    As a result, we can only accept a limited number of
+                    applicants. Your application may be rejected for reasons
+                    such as availability of spots in the program, errors or
+                    omissions in the application form, or ineligibility as
+                    described in our requirements. You can always reapply if you
+                    still wish to be a part of the program.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingNine">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseNine"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree"
+                  >
+                    Where will the bootcamp take place?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseNine"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingNine"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    The Employment Bootcamp is 100% online. You will need an
+                    internet-connected device, such as a smartphone, tablet,
+                    laptop, or desktop computer to access the learning platform
+                    and to participate in weekly live sessions and related
+                    activities.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTen">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTen"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo"
+                  >
+                    What if I can't afford the bootcamp?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTen"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingTen"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    This is understandable. A small percentage of those who
+                    apply will get a full scholarship, while others will get a
+                    discount. If you really would like to attend but can't
+                    afford it, indicate this in Any Other Comments when filling
+                    the application form.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingEleven">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseEleven"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree"
+                  >
+                    Will I get a certificate after completing The Employment
+                    Bootcamp?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseEleven"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingEleven"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Even better! For every challenge you complete, you will get
+                    a shareable, verifiable digita badge. At the end of the
+                    bootcamp, you will get a certificate of completion as well.
+                    You will also get a private url where you can manage all the
+                    credentials you receive.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwelve">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwelve"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo"
+                  >
+                    Will the employment boocamp Give me A job after the program?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTwelve"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingTwelve"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    We are working with employment partners across the country
+                    to help our gradautes secure decent jobs. From time to time,
+                    we may also post Internships, Fellowships adn Full/Part-time
+                    opportunities, so do follow us on social media.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThirteen">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThirteen"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree"
+                  >
+                    Can I apply for a job at Naomi Lucas after completing The
+                    Employment Bootcamp?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseThirteen"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingThirteen"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Upon completion of The Employment Bootcamp, there will be
+                    full-time, project-based and volunteer roles open to
+                    suitable participants of the program. For other career
+                    opportunities, follow naomilucasco on Facebook, LinkedIn and
+                    Instagram.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFourteen">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFourteen"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo"
+                  >
+                    I am an organisation and I want to partner with The
+                    Employment Bootcamp. How do I go about it?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseFourteen"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingFourteen"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Please send a mail to naomi@naomilucas.xyz or
+                    learning@naomilucas.xyz with your request and contact
+                    details and you will receive a call.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFifteen">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFifteen"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree"
+                  >
+                    I'm having some issues with my application, who do I talk
+                    to?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseFifteen"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingFifteen"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Please send an email to
+                    <a href="mailto:ask@naomiluas.xyz">ask@naomilcuas.xyz</a>,
+                    DM naomilucasco on Facebook, Instagram or LinkedIn. You may
+                    also Whatsapp (Please do not call)
+                    <a target="_blank" href="https://wa.me/2348186538971"
+                      >0818 653 8971</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 text-center">
+            <button
+              class="btn btn-block mt-5"
+              id="applyNowCTA"
+              data-bs-toggle="modal"
+              data-bs-target="#backdropRegModal"
+            >
+              Sign Me Up
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- single quote  -->
+    <section class="singleQuote">
+      <div class="container">
+        <div class="row justify-content-center">
+          <h2 class="text-center mb-5">...From Someone Who Has Lived It!</h2>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-3 col-6">
+            <img
+              src="./assets//quotes//comfort.jpg"
+              class="img-fluid"
+              style="border-radius: 50%"
+            />
+          </div>
+        </div>
+        <div class="row justify-content-center singleQuoteBody mt-4">
+          <div class="col-md-6 text-center">
+            <sup><i class="bx bxs-quote-alt-left"></i></sup> This is not a
+            typical online bootcamp – it's a personalized and transformational
+            experience unlike any other I've attended. This is a safe space to
+            let your guards down, get help, and get it right.
+            <sup><i class="bx bxs-quote-alt-right"></i></sup>
+            <p class="pt-3"><strong>- Comfort Johnson</strong></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer  -->
+    <section class="footer">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4 col-12 col text-center">
+            <img
+              src="./assets/image/graduate-pro-logo-black-removebg-preview.png"
+              class="img-fluid"
+              style="max-width: 50%"
+              alt="GraduatePro Logo"
+            />
+            <h5 class="mt-2">Early Careers Accelerator</h5>
+            <p class="mt-2">
+              Intensive, coordinated and sustained, we bridge the gap between
+              the demand for work-ready talent and the supply of decent,
+              meaningful jobs.
+            </p>
+          </div>
+          <div class="col-md-4 col-12 mt-3 text-center footerLinks">
+            <p>
+              <a target="_blank" href="https://www.app.naomilucas.xyz">Shop</a>
+            </p>
+            <p>
+              <a href="#">Privacy Policy</a>
+            </p>
+            <p><a href="#">Terms of Service</a></p>
+            <p>
+              <a target="_blank" href="https://naomilucas.xyz"
+                >Visit Naomi Lucas</a
+              >
+            </p>
+          </div>
+          <div class="col-md-4 col-12 text-center mt-3">
+            <div class="row justify-content-center">
+              <div class="social-icons">
+                <div class="icon-circle">
+                  <a href="https://facebook.com" target="_blank">
+                    <i class="bx bxl-facebook"></i>
+                  </a>
+                </div>
+                <div class="icon-circle">
+                  <a href="https://linkedin.com" target="_blank">
+                    <i class="bx bxl-instagram"></i>
+                  </a>
+                </div>
+                <div class="icon-circle">
+                  <a href="https://instagram.com" target="_blank">
+                    <i class="bx bxl-linkedin"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div
+                class="col-md-12 col-lg-12 mt-3 text-center mt-md-5 copyright-text"
+              >
+                &copy; 2023 Naomi Lucas
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fullscreen Overlay -->
+    <div id="fullscreenOverlay" class="overlay">
+      <button id="closeOverlay" class="close-btn">
+        <i class="bx bx-x"></i>
+      </button>
+      <div class="overlay-content">
+        <h2><a href="#testimoney">Testimonies</a></h2>
+        <h2><a href="#whyYouShouldApply">Why you should apply</a></h2>
+        <h2><a href="#whatAwaitsYou">What awaits you</a></h2>
+        <h2><a href="#rootingForYouAre">Rootng for you</a></h2>
+        <h2><a href="#toJoinTheBootcamp">Joining Criteria</a></h2>
+        <h2><a href="#faqs">FAQs</a></h2>
+      </div>
+    </div>
+
+    <!-- modal  -->
+
+    <div
+      class="modal fade"
+      id="backdropRegModal"
+      aria-labelledby="backdropRegModalLabel"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Contact Details</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center">
+            <div class="detailsSaved">
+              <p><i class="bx bxs-check-circle"></i></p>
+              <p>Details Saved Successfully.</p>
+              <p>Redirecting...</p>
+            </div>
+            <div class="lds-ring" id="loadingSpinner" style="display: none">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <form id="contactDetailsForm" class="text-start">
+              <div class="mb-3">
+                <label for="fullNameInput" class="form-label">Full name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fullNameInput"
+                  aria-describedby="nameHelp"
+                  required
+                />
+                <div class="text-danger small"></div>
+              </div>
+              <div class="mb-3">
+                <label for="emailInput" class="form-label">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="emailInput"
+                  aria-describedby="emailHelp"
+                  required
+                />
+                <div class="text-danger small"></div>
+              </div>
+              <div class="mb-3">
+                <label for="phoneNumberInput" class="form-label"
+                  >Phone number(Call/Whatsapp)</label
+                >
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phoneNumberInput"
+                  required
+                />
+                <div class="text-danger small"></div>
+              </div>
+              <div id="emailHelp" class="form-text">
+                We'll never share your details with anyone else.
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              id="submitContactDetails"
+              class="btn btn-primary"
+            >
+              Take Me There
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      const overlay = document.getElementById("fullscreenOverlay");
+      const overlayToggler = document.getElementById("overlayToggler");
+      const closeOverlay = document.getElementById("closeOverlay");
+
+      overlayToggler.addEventListener("click", () => {
+        overlay.style.display = "block";
+      });
+
+      closeOverlay.addEventListener("click", () => {
+        overlay.style.display = "none";
+      });
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>
