@@ -467,7 +467,9 @@ $(document).ready(function (e) {
 
     $(form).fadeOut("slow");
     $(loader).fadeIn("slow", () => {
-      const url = "http://127.0.0.1:9000/api/save-contact";
+      const baseUrl = "https://bootcamp.naomilucas.xyz";
+      // const url = "http://127.0.0.1:9000/api/save-contact";
+      const url = baseUrl + "/api/save-contact";
 
       console.log("FORMDATA", formdata);
 
@@ -480,16 +482,14 @@ $(document).ready(function (e) {
           button.hide();
           $(loader).fadeOut("slow");
           $("div.detailsSaved").fadeIn("slow");
-          window.location.href =
-            "https://paystack.com/buy/the-employment-bootcamp-application";
+          window.location.href = "https://forms.gle/zMripX5mecAwL3849";
 
           console.log("Success:", data);
         },
         error: function (xhr, status, error) {
           $(form).fadeIn("slow");
           nameInput.next().text("Error: Could not save data");
-          window.location.href =
-            "https://paystack.com/buy/the-employment-bootcamp-application";
+          window.location.href = "https://forms.gle/zMripX5mecAwL3849";
           console.error("Error:", error);
         },
       });
