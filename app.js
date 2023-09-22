@@ -467,8 +467,7 @@ $(document).ready(function (e) {
 
     $(form).fadeOut("slow");
     $(loader).fadeIn("slow", () => {
-      const baseUrl = "https://bootcamp.naomilucas.xyz";
-      // const url = "http://127.0.0.1:9000/api/save-contact";
+      const baseUrl = "https://credentials.naomilucas.xyz";
       const url = baseUrl + "/api/save-contact";
 
       console.log("FORMDATA", formdata);
