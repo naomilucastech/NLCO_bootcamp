@@ -4,6 +4,8 @@ const headText = [
   "ITS PRIMARY PURPOSE IS NOT TO TEACH YOU SKILLS.",
   "A JOB PROGRAM DESIGNED TO HELP YOU FIND MEANINGFUL WORK.",
   "TAKE CHARGE OF YOUR CAREER TODAY!",
+  "APPLICATION CLOSES: 11TH OCTOBER 2023",
+  "BOOTCAMP STARTS 23RD OCTOBER 2023",
 ];
 
 const bodyText = [
@@ -12,6 +14,8 @@ const bodyText = [
   "It will cause you to question your beliefs. It will stretch you.",
   "If you are tired of searching without success, employed but unhappy, or STUCK; you are in the right place.",
   "Show up for yourself. Apply now!.",
+  "It is highly competitive. Less than 30% of Applicants are selected per cohort. Apply early!",
+  "The Employment Bootcamp is new, disruptive and brutally effective. Show up for yourself",
 ];
 
 const facilitators = [
@@ -269,6 +273,7 @@ $(document).ready(function (e) {
   const h2 = div.find("h2");
   const p = div.find("p");
   let index = 0;
+  const formdata = {};
 
   quotes.forEach((quote, index) => {
     const quoteBaseURL = "./assets/quotes";
@@ -440,6 +445,7 @@ $(document).ready(function (e) {
       nameInput.next().text("Full name is invalid");
       return;
     } else {
+      formdata.name = nameInput.val();
       nameInput.next().text();
     }
 
@@ -447,6 +453,7 @@ $(document).ready(function (e) {
       emailInput.next().text("Email address is invalid");
       return;
     } else {
+      formdata.email = emailInput.val();
       emailInput.next().text();
     }
 
@@ -454,17 +461,38 @@ $(document).ready(function (e) {
       phoneInput.next().text("Phone number is invalid");
       return;
     } else {
+      formdata.phone = phoneInput.val();
       phoneInput.next().text();
     }
 
     $(form).fadeOut("slow");
     $(loader).fadeIn("slow", () => {
-      setTimeout(() => {
-        $(loader).fadeOut("slow");
-        $("div.detailsSaved").fadeIn("slow");
-        window.location.href =
-          "https://paystack.com/buy/the-employment-bootcamp-application";
-      }, 3000);
+      const url = "http://127.0.0.1:9000/api/save-contact";
+
+      console.log("FORMDATA", formdata);
+
+      $.ajax({
+        url: url,
+        type: "POST",
+        data: JSON.stringify(formdata),
+        contentType: "application/json",
+        success: function (data) {
+          button.hide();
+          $(loader).fadeOut("slow");
+          $("div.detailsSaved").fadeIn("slow");
+          window.location.href =
+            "https://paystack.com/buy/the-employment-bootcamp-application";
+
+          console.log("Success:", data);
+        },
+        error: function (xhr, status, error) {
+          $(form).fadeIn("slow");
+          nameInput.next().text("Error: Could not save data");
+          window.location.href =
+            "https://paystack.com/buy/the-employment-bootcamp-application";
+          console.error("Error:", error);
+        },
+      });
     });
   });
 
