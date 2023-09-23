@@ -37,12 +37,12 @@ const facilitators = [
     url: "https://www.linkedin.com/in/eseoraka/",
     title: "Partner, Adelphi Innovation Consulting",
   },
-  {
-    name: "J’odie",
-    image: "./assets/facilitators/jodie.jpg",
-    url: "https://www.instagram.com/jodiegreat/",
-    title: "Musician and Author",
-  },
+  // {
+  //   name: "J’odie",
+  //   image: "./assets/facilitators/jodie.jpg",
+  //   url: "https://www.instagram.com/jodiegreat/",
+  //   title: "Musician and Author",
+  // },
   {
     name: "Kaelo Ajuluchukwu",
     image: "./assets/facilitators/kaelo.png",
