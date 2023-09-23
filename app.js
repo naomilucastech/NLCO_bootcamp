@@ -414,8 +414,10 @@ $(document).ready(function (e) {
   }
 
   const isFullNameValid = (name) => {
-    const re = /^[a-zA-Z]+([ '-][a-zA-Z]+)*$/;
-    return re.test(name);
+    if (name !== null) {
+      return true;
+    }
+    return false;
   };
 
   const isEmailValid = (email) => {
@@ -486,8 +488,8 @@ $(document).ready(function (e) {
           console.log("Success:", data);
         },
         error: function (xhr, status, error) {
-          $(form).fadeIn("slow");
-          nameInput.next().text("Error: Could not save data");
+          // $(form).fadeIn("slow");
+          // nameInput.next().text("Error: Could not save data");
           window.location.href = "https://forms.gle/zMripX5mecAwL3849";
           console.error("Error:", error);
         },

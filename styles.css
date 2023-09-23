@@ -128,21 +128,30 @@ section#testimoney .container {
 }
 
 section#whyYouShouldApply {
+  padding: 50px 0px 100px 0px;
+}
+
+section#whyYouShouldApply p {
+  font-size: 26px;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+section#aboutBootcamp {
   background-color: #f3f3f3;
   -webkit-clip-path: polygon(100% 90%, 100% 0, 0 10%, 0 100%);
   clip-path: polygon(100% 90%, 100% 0, 0 10%, 0 100%);
   padding: 30px;
 }
 
-section#whyYouShouldApply .container {
+section#aboutBootcamp .container {
   margin: 150px 0px 150px 0px;
 }
 
-section#whyYouShouldApply .bodyText p {
-  font-size: 32px;
+section#aboutBootcamp .bodyText p {
+  font-size: 26px;
   line-height: 65px;
   font-weight: 500;
-  font-family: "Dancing Script", cursive !important ;
 }
 
 section#whatsItGonnaBe {
@@ -243,12 +252,17 @@ h2 {
   color: #ffffff;
 }
 
-.condtionItem {
-  font-size: calc(1.275rem + 0.3vw);
-  line-height: 65px;
+.conditionItem {
+  font-size: 26px;
+  color: #000000;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #888, -2px -2px 5px #888;
+  text-align: center;
+  border: 1px solid #f5f5f5;
+  padding: 20px;
 }
 
-.condtionItem:hover {
+.conditionItem:hover {
   color: #ed9510;
 }
 
@@ -605,11 +619,18 @@ section#rootingForYouAre h4 {
 
 /* MOBILR VERSION ONLY  */
 @media (max-width: 576px) {
+  .conditionItem {
+    font-size: 23px;
+  }
+  section#whyYouShouldApply p {
+    font-size: 23px;
+  }
+
   section.singleQuote .singleQuoteBody {
     font-size: 18px;
   }
 
-  section#whyYouShouldApply .bodyText p {
+  section#aboutBootcamp .bodyText p {
     font-size: 23px;
   }
 
@@ -662,7 +683,7 @@ section#rootingForYouAre h4 {
     padding-left: 0px;
   }
 
-  section#whyYouShouldApply {
+  section#aboutBootcamp {
     -webkit-clip-path: polygon(100% 95%, 100% 0, 0 5%, 0 100%);
     clip-path: polygon(100% 95%, 100% 0, 0 5%, 0 100%);
     padding: 1px 2px 30px 20px;
