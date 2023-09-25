@@ -291,8 +291,6 @@ $(document).ready(function (e) {
     <div class="row justify-content-center">
           <div class="col-md-8 text-center">
             <button
-              data-bs-toggle="modal"
-              data-bs-target="#backdropRegModal"
               id="applyNowCTA"
               class="btn btn-dark btn-block"
             >
@@ -434,6 +432,16 @@ $(document).ready(function (e) {
   const getName = (name) => {
     return name.split(" ");
   };
+
+  $("button#applyNowCTA").on("click", (e) => {
+    e.preventDefault();
+
+    const url = "https://forms.gle/zMripX5mecAwL3849";
+
+    window.open(url, "_blank");
+
+    // window.location.href = "https://forms.gle/zMripX5mecAwL3849";
+  });
 
   $("button#submitContactDetails").on("click", (e) => {
     const button = $("button#submitContactDetails");
