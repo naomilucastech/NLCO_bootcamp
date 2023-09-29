@@ -293,6 +293,8 @@ $(document).ready(function (e) {
             <button
               id="applyNowCTA"
               class="btn btn-dark btn-block"
+              data-bs-toggle="modal"
+              data-bs-target="#backdropRegModal"
             >
               Apply Now
             </button>
@@ -433,15 +435,15 @@ $(document).ready(function (e) {
     return name.split(" ");
   };
 
-  $("button#applyNowCTA").on("click", (e) => {
-    e.preventDefault();
+  // $("button#applyNowCTA").on("click", (e) => {
+  //   e.preventDefault();
 
-    const url = "https://forms.gle/zMripX5mecAwL3849";
+  //   const url = "https://forms.gle/zMripX5mecAwL3849";
 
-    window.open(url, "_blank");
+  //   window.open(url, "_blank");
 
-    // window.location.href = "https://forms.gle/zMripX5mecAwL3849";
-  });
+  //   // window.location.href = "https://forms.gle/zMripX5mecAwL3849";
+  // });
 
   $("button#submitContactDetails").on("click", (e) => {
     const button = $("button#submitContactDetails");
