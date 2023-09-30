@@ -421,18 +421,24 @@ $(document).ready(function (e) {
   };
 
   const isEmailValid = (email) => {
+    if (email !== null) {
+      return true;
+    }
+    return false;
+
     const re =
       /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);
   };
 
   const isPhoneValid = (phone) => {
+    if (phone !== null) {
+      return true;
+    }
+    return false;
+
     const re = /^(?:\+234|234|0)[789]\d{9}$/;
     return re.test(phone);
-  };
-
-  const getName = (name) => {
-    return name.split(" ");
   };
 
   // $("button#applyNowCTA").on("click", (e) => {
