@@ -12,10 +12,8 @@ const bodyText = [
   "It is an intervention designed for those who have run out of options.",
   "It will force you out of complacency. It will demand answers from you.",
   "It will cause you to question your beliefs. It will stretch you.",
-  "If you are tired of searching without success, employed but unhappy, or STUCK; you are in the right place.",
-  "Show up for yourself. Apply now!.",
-  "It is highly competitive. Less than 30% of Applicants are selected per cohort. Apply early!",
-  "The Employment Bootcamp is new, disruptive and brutally effective. Show up for yourself",
+  "It is new, disruptive and brutally effective!",
+  "If you are tired of searching without success, employed but unhappy, or STUCK; it is for you."
 ];
 
 const facilitators = [
@@ -288,8 +286,8 @@ $(document).ready(function (e) {
     <div class="col-md-8 text-center text-sm-start testimonialText" style="padding-bottom: 50px">
       ${quote.quote}
     </div>
-    <div class="row justify-content-center">
-          <div class="col-md-8 text-center">
+    <div class="row justify-content-center" style="padding-bottom: 30px">
+          <div class="col-md-8 text-center CTA">
             <button
               id="applyNowCTA"
               class="btn btn-dark btn-block"
