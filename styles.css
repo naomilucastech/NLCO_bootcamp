@@ -18,8 +18,25 @@ a:hover {
 }
 
 .navbar .container-fluid {
-  display: flex;
+  display: inline-flex;
   justify-content: space-between;
+}
+
+.site-navigation .site-menu a {
+  text-decoration: none !important;
+  display: inline-block; 
+}
+
+.site-navigation .site-menu > li {
+  display: inline-block; 
+}
+
+.site-navigation .site-menu > li > a {
+  padding: var(--spacing-1, 0.5rem) 0.4rem;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none !important;
 }
 
 section#banner {
@@ -42,6 +59,13 @@ section#navbar .row {
 }
 
 section#navbar button#overlayToggler {
+  border: none;
+  background-color: transparent;
+  font-size: 44px;
+  color: #ed9510;
+}
+
+button#closeOverlay {
   border: none;
   background-color: transparent;
   font-size: 44px;
@@ -72,7 +96,12 @@ section#navbar button#overlayToggler {
 }
 
 button#applyNowCTA {
-  padding: 10px 30px 10px 30px;
+  display: flex;
+  width: 11.25rem;
+  height: var(--spacing-8, 3.5rem);
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
   border-radius: 30px;
   background-color: #ed9510;
   border-color: #ed9510;
@@ -604,7 +633,7 @@ a.footer-link {
 }
 
 .logoImage img {
-  max-width: 40% !important;
+  max-width: 50% !important;
 }
 
 .naomiLucasTitle {
@@ -643,6 +672,17 @@ section#rootingForYouAre h4 {
   h4 {
     font-size: 18px;
   }
+  .applyNowCTA {
+    display: flex;
+    width: 10rem;
+    height: var(--spacing-7, 3rem);
+    padding: 0.8rem 1.00rem 0.8rem 0.9rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin-left: -100px;
+    margin-top: 5px;
+  }
   button#applyNowCTA {
     padding: 10px 15px 10px 15px;
   }
@@ -650,7 +690,9 @@ section#rootingForYouAre h4 {
     font-size: 18px;
   }
   .logoImage img {
-    max-width: 100% !important;
+    max-width: 100%;
+    max-height: 50%;
+    margin-top: 12px;
   }
   #bannerDiv h1 {
     font-size: 2rem;

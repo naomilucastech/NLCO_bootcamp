@@ -34,12 +34,7 @@
       sizes="16x16"
       href="assets/favicons/favicon-16x16.png"
     />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -57,33 +52,78 @@
   </head>
   <body>
     <section id="navbar" class="py-3">
-      <div class="container">
-        <div class="row justify-content-between mt-3">
-          <div class="col-sm-4 col-5 text-start">
-            <button
+      <div class="container"> 
+        <div class="d-flex navbar navbar-expand-lg">
+
+           <div class="d-inline-flex col-lg-4 justify-content-around">
+
+            <div class="d-md-none">
+              <button id="overlayToggler" href="#">
+                <i class="bx bx-menu"></i>
+              </button>
+            </div>
+  
+            <div class="d-inline-flex h1 logoImage col-8 col-sm-12 d-md-flex">
+              <img
+                src="./assets/image/graduate-pro-logo-white-cropped-new.png"
+                alt="GraduatePro Logo"
+                class="img-fluid"
+              />
+            </div>
+
+            <div class="nav-item d-md-none applyNowCTA">
+              <button
               id="applyNowCTA"
               data-bs-toggle="modal"
               data-bs-target="#backdropRegModal"
               class="btn btn-light btn-block"
-            >
-              Apply Now
-            </button>
-          </div>
-          <div class="col-md-4 col-4 h1 text-center logoImage">
-            <img
-              src="./assets/image/graduate-pro-logo-white-cropped-new.png"
-              alt="GraduatePro Logo"
-              class="img-fluid"
-            />
-          </div>
-          <div class="col-md-4 col-3 text-end">
-            <button id="overlayToggler" href="#">
-              <i class="bx bx-menu"></i>
-            </button>
+              >
+                Apply Now
+              </button>
+            </div>
+
+           </div>
+          
+          <div class="site-navigation position-relative row d-inline-flex" role="navigation">
+            <ul class="site-menu col-md-12 col d-none d-md-inline-block">
+                <li>
+                  <a href="#aboutBootcamp">About</a>
+                </li>
+                <li>
+                  <a href="#whyYouShouldApply">Why Apply?</a>
+                </li>
+                <li>
+                  <a href="#whatAwaitsYou">Curriculum</a>
+                </li>
+                <li>
+                  <a href="#rootingForYouAre">Faculty</a>
+                </li>
+                <li>
+                  <a href="#toJoinTheBootcamp">Requirements</a>
+                </li>
+                <li>
+                  <a href="#faqs">FAQs</a>
+                </li>
+                <li>
+                  <div class="nav-item ">
+                    <button
+                    id="applyNowCTA"
+                    data-bs-toggle="modal"
+                    data-bs-target="#backdropRegModal"
+                    class="btn btn-light btn-block"
+                    >
+                      Apply Now
+                    </button>
+                  </div>
+                </li>
+              </ul>
           </div>
         </div>
       </div>
     </section>
+    <br>
+
+<!--The bootcamp banner-->
 
     <section id="banner">
       <div class="container">
@@ -97,19 +137,7 @@
       </div>
     </section>
 
-    <section id="testimoney">
-      <div class="container">
-        <div class="row mt-3 justify-content-center">
-          <h2 class="text-center">DON'T TAKE OUR WORD FOR IT</h2>
-        </div>
-        <div
-          class="owl-carousel owl-theme testimonial-owl"
-          id="quotesContainer"
-        >
-          <!-- // -->
-        </div>
-      </div>
-    </section>
+<!--About the bootcamp-->
 
     <section id="aboutBootcamp">
       <div class="container">
@@ -155,6 +183,8 @@
         </div>
       </div>
     </section>
+
+    <!--Why apply?-->
 
     <section id="whyYouShouldApply">
       <div class="container">
@@ -217,6 +247,8 @@
         </div>
       </div>
     </section>
+
+    <!--Curriculum-->
 
     <section id="whatAwaitsYou" style="margin-top: 30px">
       <div class="container">
@@ -375,6 +407,8 @@
       </div>
     </section>
 
+    <!--The faculty-->
+
     <section id="rootingForYouAre">
       <div class="container">
         <div class="row mt-3 justify-content-center">
@@ -470,6 +504,8 @@
       </div>
     </section>
 
+    <!--To join the bootcamp-->
+
     <section id="toJoinTheBootcamp" class="mb-5">
       <div class="container">
         <div class="row mt-3 justify-content-center">
@@ -513,6 +549,8 @@
       </div>
     </section>
 
+    <!--What is it going to be-->
+
     <section id="whatsItGonnaBe">
       <div class="container">
         <div class="row justify-content-center">
@@ -532,6 +570,46 @@
             >
               Take Me There Already!
             </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br><br><br>
+
+    <!-- single quote  -->
+    <section class="singleQuote">
+      <div class="container">
+        <div class="row justify-content-center">
+          <h2 class="text-center mb-5">...From Someone Who Has Lived It!</h2>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-3 col-6">
+            <img
+              src="./assets//quotes//comfort.jpg"
+              class="img-fluid"
+              style="border-radius: 50%"
+            />
+          </div>
+        </div>
+        <div class="row justify-content-center singleQuoteBody mt-4">
+          <div class="col-md-8 text-center">
+            <sup><i class="bx bxs-quote-alt-left"></i></sup> This is not a
+            typical online bootcamp – it's a personalized and transformational
+            experience unlike any other I've attended. This is a safe space to
+            let your guards down, get help, and get it right.
+            <sup><i class="bx bxs-quote-alt-right"></i></sup>
+            <p class="pt-3"><strong>- Comfort Johnson</strong></p>
+            <button
+              data-bs-toggle="modal"
+              data-bs-target="#backdropRegModal"
+              id="applyNowCTA"
+              class="btn btn-light mt-3 btn-block"
+            >
+              Let's Do This
+            </button>
+            <!-- <button id="applyNowCTA" class="btn btn-light mt-3 btn-block">
+              Let's Do This
+            </button> -->
           </div>
         </div>
       </div>
@@ -991,41 +1069,18 @@
       </div>
     </section>
 
-    <!-- single quote  -->
-    <section class="singleQuote">
+    <!--Don't take our word for it-->
+
+    <section id="testimoney">
       <div class="container">
-        <div class="row justify-content-center">
-          <h2 class="text-center mb-5">...From Someone Who Has Lived It!</h2>
+        <div class="row mt-3 justify-content-center">
+          <h2 class="text-center">DON'T TAKE OUR WORD FOR IT</h2>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-md-3 col-6">
-            <img
-              src="./assets//quotes//comfort.jpg"
-              class="img-fluid"
-              style="border-radius: 50%"
-            />
-          </div>
-        </div>
-        <div class="row justify-content-center singleQuoteBody mt-4">
-          <div class="col-md-8 text-center">
-            <sup><i class="bx bxs-quote-alt-left"></i></sup> This is not a
-            typical online bootcamp – it's a personalized and transformational
-            experience unlike any other I've attended. This is a safe space to
-            let your guards down, get help, and get it right.
-            <sup><i class="bx bxs-quote-alt-right"></i></sup>
-            <p class="pt-3"><strong>- Comfort Johnson</strong></p>
-            <button
-              data-bs-toggle="modal"
-              data-bs-target="#backdropRegModal"
-              id="applyNowCTA"
-              class="btn btn-light mt-3 btn-block"
-            >
-              Let's Do This
-            </button>
-            <!-- <button id="applyNowCTA" class="btn btn-light mt-3 btn-block">
-              Let's Do This
-            </button> -->
-          </div>
+        <div
+          class="owl-carousel owl-theme testimonial-owl"
+          id="quotesContainer"
+        >
+          <!-- // -->
         </div>
       </div>
     </section>
@@ -1099,12 +1154,22 @@
         <i class="bx bx-x"></i>
       </button>
       <div class="overlay-content">
-        <h2><a href="#testimoney">Testimonials</a></h2>
-        <h2><a href="#whyYouShouldApply">Why you should apply</a></h2>
-        <h2><a href="#whatAwaitsYou">What awaits you</a></h2>
-        <h2><a href="#rootingForYouAre">Rooting for you</a></h2>
-        <h2><a href="#toJoinTheBootcamp">Eligibility</a></h2>
+        <h2><a href="#testimoney">About</a></h2>
+        <h2><a href="#whyYouShouldApply">Why Apply?</a></h2>
+        <h2><a href="#whatAwaitsYou">Curriculum</a></h2>
+        <h2><a href="#rootingForYouAre">Faculty</a></h2>
+        <h2><a href="#toJoinTheBootcamp">Requirements</a></h2>
         <h2><a href="#faqs">FAQs</a></h2>
+        <div class="nav-item">
+          <button
+          id="applyNowCTA"
+          data-bs-toggle="modal"
+          data-bs-target="#backdropRegModal"
+          class="btn btn-light btn-block"
+          >
+            Apply Now
+          </button>
+        </div>
       </div>
     </div>
 
@@ -1207,11 +1272,8 @@
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
       integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
