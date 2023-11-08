@@ -368,12 +368,12 @@ $(document).ready(function (e) {
       },
     });
 
-    $(".facilitators-owl").owlCarousel({
+    var $facilitatorsOwl = $(".facilitators-owl").owlCarousel({
       loop: true,
       margin: 10,
       nav: false,
       dots: false,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 1000,
       autoplayTimeout: 3000,
       responsive: {
@@ -389,12 +389,12 @@ $(document).ready(function (e) {
       },
     });
 
-    $(".assessors-owl").owlCarousel({
+    var $assessorsOwl = $(".assessors-owl").owlCarousel({
       loop: true,
       margin: 10,
       nav: false,
       dots: false,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 1000,
       autoplayTimeout: 3000,
       responsive: {
@@ -409,6 +409,11 @@ $(document).ready(function (e) {
         },
       },
     });
+
+    $(".form-check-label").click(function () {
+      $assessorsOwl.trigger('prev.owl.carousel');
+      $facilitatorsOwl.trigger('prev.owl.carousel')
+    }) 
   }
 
   const isFullNameValid = (name) => {
