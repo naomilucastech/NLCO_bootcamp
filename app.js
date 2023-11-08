@@ -322,7 +322,7 @@ $(document).ready(function (e) {
     <a href="${facilitator.url}" target="_blank">
     <img src="${facilitator.image}" alt="Facilitator" loading="lazy" class="img-fluid facilitatorImage" />
     <br /> 
-    <p class="text-center"><strong>${facilitator.name}</strong><br/>${facilitator.title}</p>
+    <p class="text-center" style="font-size: 1rem;"><strong>${facilitator.name}</strong><br/>${facilitator.title}</p>
     </a>
     </div>`;
     facilitatorsDiv.append(html);

@@ -251,15 +251,15 @@ section#aboutBootcamp .container {
 }
 
 .custom-checkbox input#status:checked + label > .status-switch:after {
-	left: 2;
-	content: attr(data-unchecked);
+	left: 0;
+	content: attr(data-checked);
 }
 
 .custom-checkbox input#status:checked + label > .status-switch:before {
 	color: black;
   font-weight: 500;
 	left: 50%;
-	content: attr(data-checked);
+	content: attr(data-unchecked);
 }
 
 section#aboutBootcamp .bodyText p {
