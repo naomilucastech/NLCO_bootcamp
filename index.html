@@ -53,17 +53,17 @@
   <body>
     <section id="navbar" class="py-3">
       <div class="container"> 
-        <div class="d-flex navbar navbar-expand-lg">
+        <div class="d-inline-flex navbar-expand-lg align-items-center justify-content-between">
 
-           <div class="d-inline-flex col-lg-4 justify-content-around">
+           <div class="d-inline-flex align-items-center col justify-content-center">
 
-            <div class="d-md-none">
+            <div class="d-md-none cold d-inline-block iContainer">
               <button id="overlayToggler" href="#">
                 <i class="bx bx-menu"></i>
               </button>
             </div>
   
-            <div class="d-inline-flex h1 logoImage col-8 col-sm-12 d-md-flex">
+            <div class="h1 logoImage col-md-5 col-lg-12 col-sm-12">
               <img
                 src="./assets/image/graduate-pro-logo-white-cropped-new.png"
                 alt="GraduatePro Logo"
@@ -71,7 +71,7 @@
               />
             </div>
 
-            <div class="nav-item d-md-none applyNowCTA">
+            <div class="nav-item d-md-none applyNowCTA mobButton">
               <button
               id="applyNowCTA"
               data-bs-toggle="modal"
@@ -84,25 +84,28 @@
 
            </div>
           
-          <div class="site-navigation position-relative row d-inline-flex" role="navigation">
+          <div class="site-navigation position-relative row d-inline-flex" role="navigation" >
             <ul class="site-menu col-md-12 col d-none d-md-inline-block">
                 <li>
                   <a href="#aboutBootcamp">About</a>
                 </li>
                 <li>
-                  <a href="#whyYouShouldApply">Why Apply?</a>
-                </li>
-                <li>
                   <a href="#whatAwaitsYou">Curriculum</a>
-                </li>
-                <li>
-                  <a href="#rootingForYouAre">Faculty</a>
                 </li>
                 <li>
                   <a href="#toJoinTheBootcamp">Requirements</a>
                 </li>
                 <li>
+                  <a href="#whyYouShouldApply">Why Apply?</a>
+                </li>
+                <li>
+                  <a href="#rootingForYouAre">Faculty</a>
+                </li>
+                <li>
                   <a href="#faqs">FAQs</a>
+                </li>
+                <li>
+                  <a href="#testimoney">Testimonials</a>
                 </li>
                 <li>
                   <div class="nav-item ">
@@ -141,9 +144,9 @@
 
     <section id="aboutBootcamp">
       <div class="container">
-        <div class="row mt-3 justify-content-center">
+        <div class="row mt-3 d-flex align-items-center justify-content-center">
           <h2 class="text-center">ABOUT THE EMPLOYMENT BOOTCAMP</h2>
-          <div class="col-md-8 text-start bodyText">
+          <div class="col-md-8 text-left bodyText">
             <p>
               "Hi. I’m Naomi Lucas and I led the design process for The
               Employment Bootcamp.
@@ -165,7 +168,7 @@
           </div>
           <div class="col-md-8 text-center bodyText CTA">
             <button
-              style="font-family: Raleway; color: black; text-align: center"
+              style="font-family: Raleway; color: black; text-align: center;"
               id="applyNowCTA"
               class="btn btn-dark mt-sm-3 btn-block"
               data-bs-toggle="modal"
@@ -178,73 +181,7 @@
       </div>
     </section>
 
-    <!--Why apply?-->
-
-    <section id="whyYouShouldApply">
-      <div class="container">
-        <div class="row mt-3 justify-content-center">
-          <h2 class="text-center">WHY YOU SHOULD APPLY</h2>
-          <div class="col-md-10 mt-5 col-12">
-            <div class="row justify-content-center">
-              <div class="col-md-5 text-start">
-                <img
-                  src="./assets/image/user-badge.jpg"
-                  class="img-fluid"
-                  alt="User Badge"
-                />
-              </div>
-              <div class="col-md-7">
-                <p>
-                  <i class="bx bxs-check-circle"></i> Self-concept clarity and
-                  confidence
-                </p>
-                <p><i class="bx bxs-check-circle"></i> Real-world challenges</p>
-                <p>
-                  <i class="bx bxs-check-circle"></i> Leadership and job
-                  opportunities
-                </p>
-                <p>
-                  <i class="bx bxs-check-circle"></i> Shareable and verifiable
-                  badges
-                </p>
-                <p>
-                  <i class="bx bxs-check-circle"></i> Access our network of
-                  recruiters
-                </p>
-                <p>
-                  <i class="bx bxs-check-circle"></i> Access to influencial professionals and business leaders
-                </p>
-                <p>
-                  <i class="bx bxs-check-circle"></i> Discounted job club
-                  subscription
-                </p>
-                <p>
-                  <i class="bx bxs-check-circle"></i> Group coaching and
-                  mentorship
-                </p>
-                <p>
-                  <i class="bx bxs-check-circle"></i> Personlised support and an active, supportive community
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md- mt-4 text-center bodyText CTA">
-            <button
-              style="font-family: Raleway; color: black; text-align: center"
-              id="applyNowCTA"
-              class="btn btn-dark mt-sm-3 btn-block"
-              data-bs-toggle="modal"
-              data-bs-target="#backdropRegModal"
-            >
-              Apply Now
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--Curriculum-->
+<!--Curriculum-->
 
     <section id="whatAwaitsYou" style="margin-top: 30px">
       <div class="container">
@@ -402,6 +339,131 @@
         </div>
       </div>
     </section>
+    <br><br><br><br>
+    
+    <!--Requirements-->
+
+    <section id="toJoinTheBootcamp" class="mb-5">
+      <div class="container">
+        <div class="row mt-3 justify-content-center">
+          <h2 class="text-center">TO PARTICIPATE IN THE BOOTCAMP...</h2>
+          <div class="col-md-7 text-start">
+            <p class="mt-4 text-center" style="font-size: 1.7rem;">
+              <strong>You are expected to:</strong>
+            </p>
+            <p class="conditionItem">
+              <span
+                >Be able to speak and write in English (<em
+                  >as the program will be conducted in English</em
+                >)</span
+              >
+            </p>
+            <p class="conditionItem">
+              <span
+                >Have a functional laptop or smartphone (<em>
+                  The bootcamp is delivered entirely online</em>
+                  )</span
+              >
+            </p>
+            <p class="conditionItem">
+              <span
+                >Commit at least 1 hour 30 minutes daily to participate in the bootcamp</span
+              >
+            </p>
+            <p class="conditionItem">
+              <span
+                >Be able to join weekly live events (
+                  <em>West African Time</em>
+                )</span
+              >
+            </p>
+            <p class="conditionItem">
+              <span
+                >Pay a commitment fee (
+                  <em>Check the FAQ section for details of the fee and funding options</em>
+                )</span
+              >
+            </p>
+            <p class="text-center CTA">
+              <button
+                id="applyNowCTA"
+                data-bs-toggle="modal"
+                data-bs-target="#backdropRegModal"
+                class="btn btn-light mt-3 btn-block"
+              >
+                Apply Now
+              </button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Why apply?-->
+
+    <section id="whyYouShouldApply">
+      <div class="container">
+        <div class="row mt-3 justify-content-center">
+          <h2 class="text-center">WHY YOU SHOULD APPLY</h2>
+          <div class="col-md-10 col-12">
+            <div class="row justify-content-center">
+              <div class="col-md-5 text-start">
+                <img
+                  src="./assets/image/user-badge.jpg"
+                  class="img-fluid"
+                  alt="User Badge"
+                />
+              </div>
+              <div class="col-md-7">
+                <p>
+                  <i class="bx bxs-check-circle"></i> Self-concept clarity and
+                  confidence
+                </p>
+                <p><i class="bx bxs-check-circle"></i> Real-world challenges</p>
+                <p>
+                  <i class="bx bxs-check-circle"></i> Leadership and job
+                  opportunities
+                </p>
+                <p>
+                  <i class="bx bxs-check-circle"></i> Shareable and verifiable
+                  badges
+                </p>
+                <p>
+                  <i class="bx bxs-check-circle"></i> Access our network of
+                  recruiters
+                </p>
+                <p>
+                  <i class="bx bxs-check-circle"></i> Access to influencial professionals and business leaders
+                </p>
+                <p>
+                  <i class="bx bxs-check-circle"></i> Discounted job club
+                  subscription
+                </p>
+                <p>
+                  <i class="bx bxs-check-circle"></i> Group coaching and
+                  mentorship
+                </p>
+                <p>
+                  <i class="bx bxs-check-circle"></i> Personlised support and an active, supportive community
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md- mt-4 text-center bodyText CTA">
+            <button
+              style="font-family: Raleway; color: black; text-align: center"
+              id="applyNowCTA"
+              class="btn btn-dark mt-sm-3 btn-block"
+              data-bs-toggle="modal"
+              data-bs-target="#backdropRegModal"
+            >
+              Apply Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
     <br><br>
 
     <!--The faculty-->
@@ -410,7 +472,7 @@
       <div class="container">
         <div class="row mt-3 justify-content-center">
           <h2 class="text-center">AND ROOTING FOR YOU ARE...</h2>
-          <h4 class="text-start" style="max-width: 100%">Faculty</h4>
+          <h4 class="text-start" style="max-width: 100%"><strong>Faculty</strong></h4>
           <div class="row" style="padding: 0px">
             <div class="col-md-3 text-center d-block d-sm-none">
               <img
@@ -472,14 +534,15 @@
 
           <div style="padding-bottom: 2rem;">
           </div>
+
           <!--Button picker for both cohorts-->
           
-          <div class="form-check custom-checkbox">
+          <div class="form-check custom-checkbox d-flex justify-content-center">
             <input class="form-check-input" type="checkbox" name="status" id="status">
             <label for="status" class="form-check-label">
-              <div class="status-switch" style="font-size: 0.8125rem; font-weight: 500; letter-spacing: -0.005rem; font-style: normal;"
-                data-unchecked="Cohort 2"
-                data-checked="Cohort 1"
+              <div class="status-switch" style="font-size: 0.8125rem; font-weight: 500; letter-spacing: -0.005rem; font-style: bold;"
+                data-unchecked="COHORT 2"
+                data-checked="COHORT 1"
               >
               </div>
             </label>
@@ -488,7 +551,7 @@
           <div style="padding-bottom: 2rem;"></div>
 
           <h4 class="text-start">Facilitators</h4>
-          <div class="row justify-content-center mb-3" style="padding: 0px">
+          <div class="row justify-content-center mb-3">
             <div class="col-md-12">
               <div
                 id="facilitatorsRow"
@@ -498,12 +561,12 @@
           </div>
 
           <h4 class="text-start">Assessors</h4>
-          <div class="row justify-content-center" style="padding: 0px; padding-bottom: 30px;">
-            <div class="col-md-12 text-center CTA">
+          <div class="row justify-content-center" style="padding-bottom: 30px;">
+            <div class="col-md-12 text-center CTA" style="padding-bottom: 1.5rem;">
               <div
                 id="assessorsRow"
                 class="owl-carousel assessors-owl owl-theme"
-                style="font-size: 1rem;""
+                style="font-size: 1rem;"
               ></div>
               <button
                 id="applyNowCTA"
@@ -519,63 +582,6 @@
       </div>
     </section>
 
-    <!--To join the bootcamp-->
-
-    <section id="toJoinTheBootcamp" class="mb-5">
-      <div class="container">
-        <div class="row mt-3 justify-content-center">
-          <h2 class="text-center">TO PARTICIPATE IN THE BOOTCAMP...</h2>
-          <div class="col-md-7 text-start">
-            <p class="mt-4 text-center">
-              <strong>You are expected to:</strong>
-            </p>
-            <p class="conditionItem">
-              <span
-                >Be able to speak and write in English (<em
-                  >as the program will be conducted in English</em
-                >)</span
-              >
-            </p>
-            <p class="conditionItem">
-              <span
-                >Have a functional laptop or smartphone (<em>
-                  The bootcamp is delivered entirely online</em>
-                  )</span
-              >
-            </p>
-            <p class="conditionItem">
-              <span
-                >Commit at least 1 hour 30 minutes daily to participate in the bootcamp</span
-              >
-            </p>
-            <p class="conditionItem">
-              <span
-                >Be able to join weekly live events (
-                  <em>West African Time</em>
-                )</span
-              >
-            </p>
-            <p class="conditionItem">
-              <span
-                >Pay a commitment fee (
-                  <em>Check the FAQ section for details of the fee and funding options</em>
-                )</span
-              >
-            </p>
-            <p class="text-center CTA">
-              <button
-                id="applyNowCTA"
-                data-bs-toggle="modal"
-                data-bs-target="#backdropRegModal"
-                class="btn btn-light mt-3 btn-block"
-              >
-                Apply Now
-              </button>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!--What is it going to be-->
 
@@ -604,44 +610,7 @@
     </section>
     <br><br><br>
 
-    <!-- single quote  -->
-    <section class="singleQuote">
-      <div class="container">
-        <div class="row justify-content-center">
-          <h2 class="text-center mb-5">...From Someone Who Has Lived It!</h2>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-3 col-6">
-            <img
-              src="./assets//quotes//comfort.jpg"
-              class="img-fluid"
-              style="border-radius: 50%"
-            />
-          </div>
-        </div>
-        <div class="row justify-content-center singleQuoteBody mt-4">
-          <div class="col-md-8 text-center CTA">
-            <sup><i class="bx bxs-quote-alt-left"></i></sup> This is not a
-            typical online bootcamp – it's a personalized and transformational
-            experience unlike any other I've attended. This is a safe space to
-            let your guards down, get help, and get it right.
-            <sup><i class="bx bxs-quote-alt-right"></i></sup>
-            <p class="pt-3"><strong>- Comfort Johnson</strong></p>
-            <button
-              data-bs-toggle="modal"
-              data-bs-target="#backdropRegModal"
-              id="applyNowCTA"
-              class="btn btn-light mt-3 btn-block"
-            >
-              Apply Now
-            </button>
-            <!-- <button id="applyNowCTA" class="btn btn-light mt-3 btn-block">
-              Let's Do This
-            </button> -->
-          </div>
-        </div>
-      </div>
-    </section>
+    <!--FAQs-->
 
     <section id="faqs">
       <div class="container">
@@ -1016,8 +985,48 @@
       </div>
     </section>
 
-    <!--Don't take our word for it-->
+<!-- single quote
+<section class="singleQuote">
+  <div class="container">
+    <div class="row justify-content-center">
+      <h2 class="text-center mb-5">...From Someone Who Has Lived It!</h2>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-3 col-6">
+        <img
+          src="./assets//quotes//comfort.jpg"
+      class="img-fluid"
+      style="border-radius: 50%"
+    />
+  </div>
+</div>
+<div class="row justify-content-center singleQuoteBody mt-4">
+  <div class="col-md-8 text-center CTA">
+    <sup><i class="bx bxs-quote-alt-left"></i></sup> This is not a
+    typical online bootcamp – it's a personalized and transformational
+    experience unlike any other I've attended. This is a safe space to
+    let your guards down, get help, and get it right.
+    <sup><i class="bx bxs-quote-alt-right"></i></sup>
+    <p class="pt-3"><strong>- Comfort Johnson</strong></p>
+    <button
+      data-bs-toggle="modal"
+      data-bs-target="#backdropRegModal"
+      id="applyNowCTA"
+      class="btn btn-light mt-3 btn-block"
+    >
+            Apply Now
+          </button>
+          <button id="applyNowCTA" class="btn btn-light mt-3 btn-block">
+            Let's Do This
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br><br><br> -->
 
+    <!--Don't take our word for it-->
+    <br><br>
     <section id="testimoney">
       <div class="container">
         <div class="row mt-3 justify-content-center">
