@@ -338,7 +338,7 @@ $(document).ready(function (e) {
     <div class="col-md-3 text-center">
       <img
         src="${quoteBaseURL}/${quote.image}"
-        class="img-fluid" style="width: 150px; height: 150px; border-radius: 50%; margin: auto;"
+        class="img-fluid" style="width: 9.57813rem; height: 9.57813rem; border-radius: 4.78938rem; margin: auto;"
       />
       <p style="font-size: 23px" class="mt-3"><strong>${quote.name}</strong></p>
     </div>

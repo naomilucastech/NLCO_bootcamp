@@ -73,8 +73,7 @@ section#navbar button#overlayToggler {
 }
 
 .iContainer {
-  padding-top: -1rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 button#closeOverlay {
@@ -115,7 +114,17 @@ button#applyNowCTA {
   height: var(--spacing-8, 3.5rem);
   justify-content: center;
   align-items: center;
-  padding: 1px 5px;
+  border-radius: 30px;
+  background-color: #ed9510;
+  border-color: #ed9510;
+  color: #000000 !important;
+}
+button#applyNowCTA-1 {
+  display: flex;
+  width: 6rem;
+  height: var(--spacing-8, 2rem);
+  justify-content: center;
+  align-items: center;
   border-radius: 30px;
   background-color: #ed9510;
   border-color: #ed9510;
@@ -123,6 +132,10 @@ button#applyNowCTA {
 }
 
 button#applyNowCTA:hover {
+  background-color: #000000;
+  color: #ffffff !important;
+}
+button#applyNowCTA-1:hover {
   background-color: #000000;
   color: #ffffff !important;
 }
@@ -393,6 +406,11 @@ h2 {
 .btn-block {
   font-weight: 600;
   font-size: 23px;
+}
+.btn-block-1 {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.6875rem;
 }
 
 .btn-block:hover {
@@ -808,14 +826,20 @@ section#rootingForYouAre h4 {
   button#applyNowCTA {
     padding: 10px 15px 10px 15px;
   }
+  button#applyNowCTA-1 {
+    padding: 2px 4px;
+  }
   .btn-block {
     font-size: 1.125rem;
+  }
+  .btn-block-1 {
+    font-size: 0.8rem;
   }
   .logoImage img {
     max-width: 100%;
     max-height: 50%;
-    margin-top: 12px;
-    margin-left: 0.5rem;
+    margin-top: 12.5px;
+    margin-left: -1.5rem;
   }
   #bannerDiv h1 {
     font-size: 2rem;
@@ -930,19 +954,26 @@ section#rootingForYouAre h4 {
   }
 }
 
-/*for smaller screen sizes*/
-@media (max-width: 360px) {
-  .conditionItem {
-    font-size: 23px;
-  }
-  .applyNowCTA {
+/*for scren below 450*/
+@media (max-width: 450px) {
+  .smNavbar {
     display: flex;
-    width: 10rem;
-    padding: -0.4rem -0.5rem -0.4rem -0.5rem;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 1;
-    margin-left: -100px;
-    margin-top: 5px;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 7vh;
+    padding: -1rem;
+  }
+  .logoImage {
+    width: 50%;
+    height: 50%;
+    
+  }
+  .btn {
+    transition: none;
+    padding: auto;
+  }
+  section#navbar button#overlayToggler {
+    font-size: 24px;
   }
 }
