@@ -13,7 +13,7 @@ const bodyText = [
   "It will force you out of complacency. It will demand answers from you.",
   "It will cause you to question your beliefs. It will stretch you.",
   "It is new, disruptive and brutally effective!",
-  "If you are tired of searching without success, employed but unhappy, or STUCK; it is for you."
+  "If you are tired of searching without success, employed but unhappy, or STUCK; it is for you.",
 ];
 
 const facilitators = [
@@ -366,7 +366,7 @@ $(document).ready(function (e) {
     const assessorBaseUrl = "./assets/assessors";
     const html = `<div>
     <a href="${assessor.url}" target="_blank">
-    <img src="${assessorBaseUrl}/${assessor.image}" alt="Facilitator" loading="lazy" class="img-fluid facilitatorImage" />
+    <img src="${assessorBaseUrl}/${assessor.image}" alt="${assessor.name}" loading="lazy" class="img-fluid facilitatorImage" />
     <br /> 
     <p class="text-center"><strong>${assessor.name}</strong><br/>${assessor.title}</p>
     </a>
@@ -379,7 +379,7 @@ $(document).ready(function (e) {
     const html = `
     <div>
     <a href="${facilitator.url}" target="_blank">
-    <img src="${facilitator.image}" alt="Facilitator" loading="lazy" class="img-fluid facilitatorImage"/>
+    <img src="${facilitator.image}" alt="${facilitator.name}" loading="lazy" class="img-fluid facilitatorImage"/>
     <br /> 
     <p class="text-center" style="font-size: 1rem;"><strong>${facilitator.name}</strong><br/>${facilitator.title}</p>
     </a>
@@ -470,9 +470,9 @@ $(document).ready(function (e) {
     });
 
     $(".form-check-label").click(function () {
-      $assessorsOwl.trigger('prev.owl.carousel');
-      $facilitatorsOwl.trigger('prev.owl.carousel')
-    }) 
+      $assessorsOwl.trigger("prev.owl.carousel");
+      $facilitatorsOwl.trigger("prev.owl.carousel");
+    });
   }
 
   const isFullNameValid = (name) => {
@@ -574,6 +574,11 @@ $(document).ready(function (e) {
       });
     });
   });
+
+  // $(".overlay-content a").on("click", function () {
+  //   console.log("Link Clicked");
+  //   $("#fullscreenOverlay").hide();
+  // });
 
   fadeInText();
   initOwl();
