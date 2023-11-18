@@ -34,9 +34,14 @@ a:hover {
 .site-navigation .site-menu > li > a {
   padding: var(--spacing-1, 0.5rem) 0.4rem;
   color: #fff;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   text-decoration: none !important;
+}
+
+.site-navigation {
+  margin-top: 0.8rem;
+  margin-right: -1rem;
 }
 
 section#banner {
@@ -51,6 +56,8 @@ section#banner {
 
 section#navbar {
   background-color: #000000;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
 }
 
 section#navbar .row {
@@ -61,8 +68,13 @@ section#navbar .row {
 section#navbar button#overlayToggler {
   border: none;
   background-color: transparent;
+  padding: 0;
   font-size: 44px;
   color: #ed9510;
+}
+
+.iContainer {
+  margin-top: 0.5rem;
 }
 
 button#closeOverlay {
@@ -103,7 +115,17 @@ button#applyNowCTA {
   height: var(--spacing-8, 3.5rem);
   justify-content: center;
   align-items: center;
-  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: #ed9510;
+  border-color: #ed9510;
+  color: #000000 !important;
+}
+button#applyNowCTA-1 {
+  display: flex;
+  width: 6rem;
+  height: var(--spacing-8, 2rem);
+  justify-content: center;
+  align-items: center;
   border-radius: 30px;
   background-color: #ed9510;
   border-color: #ed9510;
@@ -111,6 +133,10 @@ button#applyNowCTA {
 }
 
 button#applyNowCTA:hover {
+  background-color: #000000;
+  color: #ffffff !important;
+}
+button#applyNowCTA-1:hover {
   background-color: #000000;
   color: #ffffff !important;
 }
@@ -127,17 +153,22 @@ button#applyNowCTA-black {
 }
 
 .CTA button {
+  width: 11.25rem;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
 }
 
 section#rootingForYouAre {
+  margin-top: -7rem;
   padding: 100px 0px 50px 0px;
 }
 
 .facultyImage {
-  border-radius: 50%;
+  border-radius: 10.75688rem;
+  width: 19.125rem;
+  height: 23.90125rem;
+  flex-shrink: 0;
 }
 
 .testimonial-wrapper {
@@ -184,11 +215,15 @@ section#aboutBootcamp {
   background-color: #f3f3f3;
   -webkit-clip-path: polygon(100% 90%, 100% 0, 0 10%, 0 100%);
   clip-path: polygon(100% 90%, 100% 0, 0 10%, 0 100%);
-  padding: 30px;
+  padding: 20px;
+  margin-top: -4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 section#aboutBootcamp .container {
-  margin: 150px 0px 150px 0px;
+  margin: 100px 0px 150px 0px;
 }
 
 /*for cohorts checkbox*/
@@ -230,9 +265,11 @@ section#aboutBootcamp .container {
 }
 
 .custom-checkbox input#status + label > .status-switch:before {
-	background: var(--system-background-light-primary, #FFF);
+	background: #ed9510;
 	color: black;
   font-weight: 500;
+  font-weight: bold;
+  text-transform: uppercase;
 	box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.04), 0px 3px 8px 0px rgba(0, 0, 0, 0.12);
 	left: 3px;
 	z-index: 10;
@@ -368,9 +405,13 @@ h2 {
 }
 
 .btn-block {
-  min-width: 40%;
   font-weight: 600;
   font-size: 23px;
+}
+.btn-block-1 {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.6875rem;
 }
 
 .btn-block:hover {
@@ -393,7 +434,10 @@ h2 {
 }
 
 .facilitatorImage {
-  border-radius: 50%;
+  border-radius: 4.78938rem;
+  width: 9.57813rem;
+  height: 9.57813rem;
+  flex-shrink: 0;
 }
 
 .overlay {
@@ -773,7 +817,6 @@ section#rootingForYouAre h4 {
   .applyNowCTA {
     display: flex;
     width: 10rem;
-    height: var(--spacing-7, 3rem);
     padding: 0.8rem 1.00rem 0.8rem 0.9rem;
     justify-content: center;
     align-items: center;
@@ -784,13 +827,20 @@ section#rootingForYouAre h4 {
   button#applyNowCTA {
     padding: 10px 15px 10px 15px;
   }
+  button#applyNowCTA-1 {
+    padding: 2px 4px;
+  }
   .btn-block {
-    font-size: 18px;
+    font-size: 1.125rem;
+  }
+  .btn-block-1 {
+    font-size: 0.8rem;
   }
   .logoImage img {
     max-width: 100%;
     max-height: 50%;
-    margin-top: 12px;
+    margin-top: 9px;
+    margin-left: -1.5rem;
   }
   #bannerDiv h1 {
     font-size: 2rem;
@@ -799,6 +849,7 @@ section#rootingForYouAre h4 {
   #bannerDiv h2 {
     font-weight: 900;
     display: none;
+    line-height: 2.8rem;
     font-size: 3rem;
   }
   #bannerDiv p {
@@ -827,6 +878,7 @@ section#rootingForYouAre h4 {
     -webkit-clip-path: polygon(100% 95%, 100% 0, 0 5%, 0 100%);
     clip-path: polygon(100% 95%, 100% 0, 0 5%, 0 100%);
     padding: 1px 2px 30px 20px;
+    margin-top: -5rem;
   }
 
   .timeline > li > .timeline-badge {
@@ -837,6 +889,11 @@ section#rootingForYouAre h4 {
 
   .timeline-panel.panelRounded {
     text-align: center;
+  }
+
+  .site-navigation {
+    margin-top: 0.8rem;
+    margin-left: 0.1rem;
   }
 
   section#rootingForYouAre {
@@ -895,5 +952,73 @@ section#rootingForYouAre h4 {
     display: block;
     font-size: 18px;
     justify-content: space-between;
+  }
+}
+
+/*for scren below 450*/
+@media (max-width: 540px) {
+  .smNavbar {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 7vh;
+    padding: -1rem;
+  }
+  .logoImage {
+    width: 50%;
+    height: 50%;
+    
+  }
+  .btn {
+    transition: none;
+    padding: auto;
+  }
+  section#navbar button#overlayToggler {
+    font-size: 24px;
+  }
+  section#navbar {
+    padding-top: 0.3rem;
+    padding-bottom: 0.5rem;
+  }
+}
+/*for scren between 920 and 712*/
+@media (min-width: 768px) and (max-width: 913px) {
+  .smNavbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 7vh;
+  }
+  .logoImage {
+    width: 50%;
+    height: 50%;
+  }
+  .btn {
+    transition: none;
+    padding: auto;
+  }
+  section#navbar button#overlayToggler {
+    font-size: 30px;
+  }
+  section#navbar {
+    padding-top: 0.3rem;
+    padding-bottom: 0.5rem;
+  }
+  button#applyNowCTA-1 {
+    padding: 10px 15px;
+  }
+  button#applyNowCTA-1 {
+    display: flex;
+    width: 10rem;
+    height: var(--spacing-8, 3rem);
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: #ed9510;
+    border-color: #ed9510;
+    color: #000000 !important;
+    font-size: large;
   }
 }

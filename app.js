@@ -18,52 +18,28 @@ const bodyText = [
 
 const facilitators = [
   {
+    name: "Tochukwu McFoy",
+    image: "./assets/facilitators/Tochukwu_McFoy.png",
+    url: "https://www.linkedin.com/in/tochukwu-macfoy-05947b103/",
+    title: "CEO, Energize Music",
+  },
+  {
+    name: "Mayowa Adegoke",
+    image: "./assets/facilitators/Mayowa.png",
+    url: "https://www.linkedin.com/in/mayowaadegoke/",
+    title: "Middle East Correspondent, Channels TV",
+  },
+  {
+    name: "Olumide Lawrence Odeyemi",
+    image: "./assets/facilitators/Olumide_Lawrence.png",
+    url: "https://www.instagram.com/oluglowville/",
+    title: "Founder, Glowville Communications",
+  },
+  {
     name: "Alex Ohai",
     image: "./assets/facilitators/alex.jpg",
     url: "https://www.linkedin.com/in/alexnnekaohai/",
     title: "Head, HR, 9 Payment Service Bank",
-  },
-  {
-    name: "Anthony Otuya Ndubishi",
-    image: "./assets/facilitators/anthony.jpg",
-    url: "https://www.linkedin.com/in/anthonyotuyandubishi/",
-    title: "Managing Partner, Crossview Solutions Intl Ltd",
-  },
-  {
-    name: "Ese Oraka",
-    image: "./assets/facilitators/ese.jpg",
-    url: "https://www.linkedin.com/in/eseoraka/",
-    title: "Partner, Adelphi Innovation Consulting",
-  },
-  // {
-  //   name: "J’odie",
-  //   image: "./assets/facilitators/jodie.jpg",
-  //   url: "https://www.instagram.com/jodiegreat/",
-  //   title: "Musician and Author",
-  // },
-  {
-    name: "Kaelo Ajuluchukwu",
-    image: "./assets/facilitators/kaelo.png",
-    url: "https://www.linkedin.com/in/%E2%80%98kaelo-ajuluchukwu-b0a95948/",
-    title: "Associate General Counsel, Meta",
-  },
-  {
-    name: "Kathleen Ndongmo",
-    image: "./assets/facilitators/kathleen.jpg",
-    url: "https://www.linkedin.com/in/kathleenndongmo/",
-    title: "Digital Content Manager, Viamo",
-  },
-  {
-    name: "Maryam Aliko Mohammed",
-    image: "./assets/facilitators/mariam.jpg",
-    url: "https://www.linkedin.com/in/maryamalikomohammed/",
-    title: "CEO, Modalali",
-  },
-  {
-    name: "Mayowa Adegoke",
-    image: "./assets/facilitators/mayowa.jpg",
-    url: "https://www.linkedin.com/in/mayowaadegoke/",
-    title: "International journalist and Public Speaker",
   },
   {
     name: "Olusola John",
@@ -72,67 +48,109 @@ const facilitators = [
     title: "Founder, Careerwise",
   },
   {
-    name: "Segun Lawal",
-    image: "./assets/facilitators/segun.jpg",
-    url: "https://www.linkedin.com/in/segunlawal-100q007/",
-    title: "Founder, Spirit of David",
+    name: "Maryam Aliko Mohammed",
+    image: "./assets/facilitators/Mariam_Aliko.png",
+    url: "https://www.linkedin.com/in/maryamalikomohammed/",
+    title: "CEO, Modalali",
   },
   {
-    name: "Toluwase Olaniyan",
-    image: "./assets/facilitators/Toluwase.jpg",
-    url: "https://www.linkedin.com/in/toluwase-olaniyan/",
-    title: "CEO, Worden",
+    name: "Ibukun Amosu",
+    image: "./assets/facilitators/Ibukun_Amosun.png",
+    url: "https://www.linkedin.com/in/ibukunamosu/",
+    title: "Founder, The intern place",
   },
   {
-    name: "Folakemi Onamade",
-    image: "./assets/facilitators/folakeme.jpg",
-    url: "https://www.linkedin.com/in/folakemi-onamade-737336162/",
-    title: "Learning Delivery, Naomi Lucas",
+    name: "Gloria Alado",
+    image: "./assets/facilitators/Gloria_Alado.png",
+    url: "https://www.linkedin.com/in/gloriangalado/",
+    title: "Talent Sourcing Specialist, Pariti",
   },
   {
-    name: "Aisha Bukar",
-    image: "./assets/facilitators/aisha.jpg",
-    url: "https://www.linkedin.com/in/aisha-bukar",
-    title: "Resident Facilitator, Naomi Lucas",
+    name: "Dr. Jibril AbdulMalik",
+    image: "./assets/facilitators/JAbdulmalik.png",
+    url: "https://www.linkedin.com/in/jabdulmalik/",
+    title: "Founder/CEO, Asido Foundation",
   },
   {
-    name: "Peace Eze",
-    image: "./assets/facilitators/peace.jpg",
-    url: "https://www.linkedin.com/in/peace-eze",
-    title: "Resident Facilitator, Naomi Lucas",
+    name: "Francesca Uriri",
+    image: "./assets/facilitators/Francesca_Uriri.png",
+    url: "https://www.linkedin.com/in/francescauriri/",
+    title: "Communications Lead, Meta",
   },
+  //{
+  //  name: "Anthony Otuya Ndubishi",
+  //  image: "./assets/facilitators/anthony.jpg",
+  //  url: "https://www.linkedin.com/in/anthonyotuyandubishi/",
+  //  title: "Managing Partner, Crossview Solutions Intl Ltd",
+  //},
+  //{
+  //  name: "Ese Oraka",
+  //  image: "./assets/facilitators/ese.jpg",
+  //  url: "https://www.linkedin.com/in/eseoraka/",
+  //  title: "Partner, Adelphi Innovation Consulting",
+  //},
+  // {
+  //   name: "J’odie",
+  //   image: "./assets/facilitators/jodie.jpg",
+  //   url: "https://www.instagram.com/jodiegreat/",
+  //   title: "Musician and Author",
+  // },
+  //{
+  //  name: "Kaelo Ajuluchukwu",
+  //  image: "./assets/facilitators/kaelo.png",
+  //  url: "https://www.linkedin.com/in/%E2%80%98kaelo-ajuluchukwu-b0a95948/",
+  //  title: "Associate General Counsel, Meta",
+  //},
+  //{
+  //  name: "Kathleen Ndongmo",
+  //  image: "./assets/facilitators/kathleen.jpg",
+  //  url: "https://www.linkedin.com/in/kathleenndongmo/",
+  //  title: "Digital Content Manager, Viamo",
+  //},
+  //{
+  //  name: "Segun Lawal",
+  //  image: "./assets/facilitators/segun.jpg",
+  //  url: "https://www.linkedin.com/in/segunlawal-100q007/",
+  //  title: "Founder, Spirit of David",
+  //},
+  //{
+  //  name: "Toluwase Olaniyan",
+  //  image: "./assets/facilitators/Toluwase.jpg",
+  //  url: "https://www.linkedin.com/in/toluwase-olaniyan/",
+  //  title: "CEO, Worden",
+  //},
+  //{
+  //  name: "Folakemi Onamade",
+  //  image: "./assets/facilitators/folakeme.jpg",
+  //  url: "https://www.linkedin.com/in/folakemi-onamade-737336162/",
+  //  title: "Learning Delivery, Naomi Lucas",
+  //},
+  //{
+  //  name: "Aisha Bukar",
+  //  image: "./assets/facilitators/aisha.jpg",
+  //  url: "https://www.linkedin.com/in/aisha-bukar",
+  //  title: "Resident Facilitator, Naomi Lucas",
+  //},
+  //{
+  //  name: "Peace Eze",
+  //  image: "./assets/facilitators/peace.jpg",
+  //  url: "https://www.linkedin.com/in/peace-eze",
+  //  title: "Resident Facilitator, Naomi Lucas",
+  //},
 ];
 
 const assessors = [
   {
-    name: "Victor Kehinde",
-    image: "kehinde.jpg",
-    url: "https://www.linkedin.com/in/demindsurgeon",
-    title: "CEO, Epitome Innovation",
+    name: "Raquel Kasham Daniel",
+    image: "kashim.jpg",
+    url: "https://www.linkedin.com/in/raqueldaniel",
+    title: "Co-founder, Bambini Africa",
   },
   {
-    name: "Osho Ademola Joel",
-    image: "osho.jpg",
-    url: "https://www.linkedin.com/in/oshoademolajoel",
-    title: "CEO, Supretec.com and oshoademolajoel.com",
-  },
-  {
-    name: "Ijeoma Igbaji",
-    image: "ijeoma.jpg",
-    url: "https://www.linkedin.com/in/ijeoma-igbaji",
-    title: "Founder, TEODORO NG",
-  },
-  {
-    name: "Akan Ebong",
-    image: "ebong.jpg",
-    url: "https://www.linkedin.com/in/akanebong",
-    title: "Team Lead, Vestcraft Technologies Limited",
-  },
-  {
-    name: "Obinna Igwebuike",
-    image: "obinna.jpg",
-    url: "https://www.linkedin.com/in/obinnaigwebuike/",
-    title: "Co-Founder & Commercial Development Lead, kliqr",
+    name: "Temitope Akinkunmi",
+    image: "Temitope.png",
+    url: "https://www.linkedin.com/in/temitope-akinkunmi-41188384",
+    title: "CEO, Fisibul Networks Int’l",
   },
   {
     name: "Christiana Lamba",
@@ -141,52 +159,15 @@ const assessors = [
     title: "Team Lead, LeMakarios Hub",
   },
   {
-    name: "Henrietta Ogu",
-    image: "henrietta.jpg",
-    url: "https://www.linkedin.com/in/henrietta-ogu/",
-    title: "Project Manager, Volition Capital",
+    name: "Furera Bagel",
+    image: "Furera_Bagel.png",
+    title: "Lecturer, Bauchi State University.",
   },
   {
-    name: "Olaronke Ariyibi-Sodade",
-    image: "olaronke.jpg",
-    url: "https://www.linkedin.com/in/olaronke-ariyibi",
-    title: "Business Development Manager, Sparke",
-  },
-  {
-    name: "Omale Akoji-Omale",
-    image: "omale.jpg",
-    url: "https://www.linkedin.com/in/omale-akoji-omale-b1a71830",
-    title: "CEO, WoodsWorth Furniture Limited",
-  },
-  {
-    name: "Raquel Kasham Daniel",
-    image: "kashim.jpg",
-    url: "https://www.linkedin.com/in/raqueldaniel",
-    title: "Co-founder, Bambini Africa",
-  },
-  {
-    name: "Glorie Okorie",
-    image: "glorie.jpg",
-    url: "https://www.linkedin.com/in/gloria-okorie-644ba035",
-    title: "Program/Innovation Lead, Impact Hub Lagos",
-  },
-  {
-    name: "Oyewo Olalekan Joseph",
-    image: "oyewo.jpg",
-    url: "https://www.linkedin.com/in/oyewo-olalekan-7289aa4b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BY%2BzMOPU9RuSIoq8LeduMCQ%3D%3D",
-    title: "HR Business Partner Haven Square Ltd.",
-  },
-  {
-    name: "Ese Oraka",
-    image: "ese.jpg",
-    url: "https://www.linkedin.com/in/eseoraka?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bc1efe8DmQ1K37ShMJ5WjpQ%3D%3D",
-    title: "Partner, Adelphi Innovation Consulting",
-  },
-  {
-    name: "Temitope Akinkunmi",
-    image: "temitope.jpg",
-    url: "https://www.linkedin.com/in/temitope-akinkunmi-41188384",
-    title: "CEO, Fisibul Networks Int’l",
+    name: "Temidayo Salako",
+    image: "Temidayo_Salako.png",
+    url: "https://www.linkedin.com/in/temidayosalako/",
+    title: "Head, Business Unit at Tunga",
   },
   {
     name: "Olumide Campbell",
@@ -195,10 +176,10 @@ const assessors = [
     title: "Executive Director, Etu Odi Ltd.",
   },
   {
-    name: "Dare Akinfosile",
-    image: "dare.jpg",
-    url: "https://www.linkedin.com/in/akinfosiledarejoseph",
-    title: "Emergency Response, HSE Specialist, Green Africa",
+    name: "Gift Okorie",
+    image: "Gift_Okorie.png",
+    url: "https://www.linkedin.com/in/gloria-okorie-644ba035",
+    title: "Program/Innovation Lead, Impact Hub Lagos",
   },
   {
     name: "Ayodeji Jeremiah",
@@ -207,11 +188,89 @@ const assessors = [
     title: "Management Consultant",
   },
   {
-    name: "Fortune Onyemuwa",
-    image: "fortune.jpg",
-    url: "https://www.linkedin.com/in/fortunebolt",
-    title: "Product Design Lead, Kominiti",
+    name: "Osho Ademola Joel",
+    image: "osho.jpg",
+    url: "https://www.linkedin.com/in/oshoademolajoel",
+    title: "CEO, Supretec.com and oshoademolajoel.com",
   },
+  {
+    name: "Obinna Igwebuike",
+    image: "obinna.jpg",
+    url: "https://www.linkedin.com/in/obinnaigwebuike/",
+    title: "Co-Founder & Commercial Development Lead, kliqr",
+  },
+  {
+    name: "Onuoha Anayor Daniel",
+    image: "Anayor_Onuoha.png",
+    url: "https://www.linkedin.com/in/anayor-daniel/",
+    title: "Lead, People Experience at Alerzo",
+  },
+  //{
+  //  name: "Victor Kehinde",
+  //  image: "kehinde.jpg",
+  //  url: "https://www.linkedin.com/in/demindsurgeon",
+  //  title: "CEO, Epitome Innovation",
+  //},
+  //{
+  //  name: "Ijeoma Igbaji",
+  //  image: "ijeoma.jpg",
+  //  url: "https://www.linkedin.com/in/ijeoma-igbaji",
+  //  title: "Founder, TEODORO NG",
+  //},
+  //{
+  //  name: "Akan Ebong",
+  //  image: "ebong.jpg",
+  //  url: "https://www.linkedin.com/in/akanebong",
+  //  title: "Team Lead, Vestcraft Technologies Limited",
+  //},
+  {
+    name: "Olumide Gbadebo",
+    image: "Olumide_Gbadebo.png",
+    url: "http://linkedin.com/in/olumide-gbadebo-7292a098/",
+    title: "Project Manager, Volition CapitalCEO Adunni Organics",
+  },
+  //{
+  //  name: "Henrietta Ogu",
+  //  image: "henrietta.jpg",
+  //  url: "https://www.linkedin.com/in/henrietta-ogu/",
+  //  title: "Project Manager, Volition Capital",
+  //},
+  //{
+  //  name: "Olaronke Ariyibi-Sodade",
+  //  image: "olaronke.jpg",
+  //  url: "https://www.linkedin.com/in/olaronke-ariyibi",
+  //  title: "Business Development Manager, Sparke",
+  //},
+  //{
+  //  name: "Omale Akoji-Omale",
+  //  image: "omale.jpg",
+  //  url: "https://www.linkedin.com/in/omale-akoji-omale-b1a71830",
+  //  title: "CEO, WoodsWorth Furniture Limited",
+  //},
+  //{
+  //  name: "Oyewo Olalekan Joseph",
+  //  image: "oyewo.jpg",
+  //  url: "https://www.linkedin.com/in/oyewo-olalekan-7289aa4b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BY%2BzMOPU9RuSIoq8LeduMCQ%3D%3D",
+  //  title: "HR Business Partner Haven Square Ltd.",
+  //},
+  //{
+  //  name: "Ese Oraka",
+  //  image: "ese.jpg",
+  //  url: "https://www.linkedin.com/in/eseoraka?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bc1efe8DmQ1K37ShMJ5WjpQ%3D%3D",
+  //  title: "Partner, Adelphi Innovation Consulting",
+  //},
+  //{
+  //  name: "Dare Akinfosile",
+  //  image: "dare.jpg",
+  //  url: "https://www.linkedin.com/in/akinfosiledarejoseph",
+  //  title: "Emergency Response, HSE Specialist, Green Africa",
+  //},
+  //{
+  //  name: "Fortune Onyemuwa",
+  //  image: "fortune.jpg",
+  //  url: "https://www.linkedin.com/in/fortunebolt",
+  //  title: "Product Design Lead, Kominiti",
+  //},
 ];
 
 const quotes = [
@@ -279,14 +338,14 @@ $(document).ready(function (e) {
     <div class="col-md-3 text-center">
       <img
         src="${quoteBaseURL}/${quote.image}"
-        class="img-fluid" style="width: 150px; height: 150px; border-radius: 50%; margin: auto;"
+        class="img-fluid" style="width: 9.57813rem; height: 9.57813rem; border-radius: 4.78938rem; margin: auto;"
       />
       <p style="font-size: 23px" class="mt-3"><strong>${quote.name}</strong></p>
     </div>
-    <div class="col-md-8 text-center text-sm-start testimonialText" style="padding-bottom: 50px">
+    <div class="col-md-8 text-center text-sm-start testimonialText">
       ${quote.quote}
     </div>
-    <div class="row justify-content-center" style="padding-bottom: 30px">
+    <div class="row justify-content-center" style="padding-bottom: 70px">
           <div class="col-md-8 text-center CTA">
             <button
               id="applyNowCTA"
@@ -320,7 +379,7 @@ $(document).ready(function (e) {
     const html = `
     <div>
     <a href="${facilitator.url}" target="_blank">
-    <img src="${facilitator.image}" alt="Facilitator" loading="lazy" class="img-fluid facilitatorImage" />
+    <img src="${facilitator.image}" alt="Facilitator" loading="lazy" class="img-fluid facilitatorImage"/>
     <br /> 
     <p class="text-center" style="font-size: 1rem;"><strong>${facilitator.name}</strong><br/>${facilitator.title}</p>
     </a>
